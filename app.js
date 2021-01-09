@@ -41,9 +41,15 @@ app.post('/upload', (req,res) => {
             .then(result => {
                 //res.send(result.text);
                 res.redirect('/download');
+            
             })
             .finally(() => worker.terminator());
         });
+
+        fs.unlink(`./uploads/${req.file.originalname}`, (err) => {
+            if (err) throw err;
+            console.log('cleared temporary image');
+          });
     })
 })
 
