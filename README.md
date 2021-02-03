@@ -1,10 +1,11 @@
-# img-ocr
-This scans the text from image and gives you pdf.
+# Text Recognition from Image
+This scans the text from image and gives you pdf with copyable text.
 
-Technologies used:-
+### Technologies used :
+* MS Visual Studio Code
 
-Node.js: For file manipulation
+* Node.js: For file manipulation
 
-Multer: To upload image file to server.
+* Multer: To upload image file to server.
 
-Tesseract: For OCR.
+* Tesseract: For OCR.
